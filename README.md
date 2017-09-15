@@ -14,8 +14,9 @@
 ### git
 master  主分支
 
-dev     开发分支  录制视频
+rice
 
-test    test 分支 写测试
-### 我叫刘子军
-### 我要做大牛
+dev     开发分支 
+
+teach    
+
