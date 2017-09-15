@@ -25,7 +25,7 @@ const museUiThemePath = path.join(
   '..',
   'node_modules',
   'muse-ui',
-  'src/styles/themes/variables/default.less'
+  'src/styles/themes/variables/teal.less'
 )
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {

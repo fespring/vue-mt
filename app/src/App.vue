@@ -3,11 +3,11 @@
  
   <router-view></router-view>
   <mu-tabs :value="activeTab" @change="handleTabChange" id="footer">
-    <mu-tab value="/home"  icon="phone" title="首页"/>
-    <mu-tab value="/recent" icon="favorite" title="FAVORITES"/>
-    <mu-tab value="/guang" icon="person_pin" title="NEARBY"/>
-    <mu-tab value="/order" icon="person_pin" title="NEARBY"/>
-    <mu-tab value="/me" icon="person_pin" title="NEARBY"/>
+    <mu-tab value="/home"  icon="home" title="首页"/>
+    <mu-tab value="/recent" icon="pin_drop" title="附近"/>
+    <mu-tab value="/guang" icon="language" title="逛一逛"/>
+    <mu-tab value="/order" icon="assignment" title="订单"/>
+    <mu-tab value="/me" icon="account_circle" title="我的"/>
   </mu-tabs>
 </div>
 </template>
@@ -18,7 +18,6 @@ import Vue from 'vue'
 import 'muse-components/styles/base.less' // 加载基础的样式
 import Tabs from 'muse-components/tabs/tabs'
 import Tab from 'muse-components/tabs/tab'
-// ..
 Vue.component(Tabs.name, Tabs)
 Vue.component(Tab.name, Tab)
 
