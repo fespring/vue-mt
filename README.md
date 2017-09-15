@@ -16,7 +16,8 @@ master  主分支
 
 rice
 
-git merge
+dev     开发分支 
+
 
 
 
