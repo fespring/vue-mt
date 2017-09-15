@@ -16,5 +16,4 @@ master  主分支
 
 dev     开发分支  录制视频
 
-test    test 分支 写测试
 
