@@ -5,10 +5,6 @@ import App from './App'
 import router from './router'
 import store from './vuex'
 
-import 'muse-ui/dist/muse-ui.css'
-import MuseUI from 'muse-ui'
-Vue.use(MuseUI)
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,7 +1,7 @@
 <template>
 <div>
+ 
   <router-view></router-view>
-
   <mu-tabs :value="activeTab" @change="handleTabChange" id="footer">
     <mu-tab value="/home"  icon="phone" title="首页"/>
     <mu-tab value="/recent" icon="favorite" title="FAVORITES"/>
@@ -13,6 +13,15 @@
 </template>
 
 <script>
+
+import Vue from 'vue'
+import 'muse-components/styles/base.less' // 加载基础的样式
+import Tabs from 'muse-components/tabs/tabs'
+import Tab from 'muse-components/tabs/tab'
+// ..
+Vue.component(Tabs.name, Tabs)
+Vue.component(Tab.name, Tab)
+
 export default {
   data () {
     return {
@@ -25,9 +34,11 @@ export default {
       this.activeTab = val
 
        this.$router.push(val);
-    },
+    }
     
   }
+
+
 }
 </script>
 
