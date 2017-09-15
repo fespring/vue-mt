@@ -7,12 +7,12 @@ git clone https://github.com/lihongmi/canvas_sub.git
 ```
 3. 生成公钥
 ```
-ssh-keygen -C '741205360@qq.com' -t rsa
+ssh-keygen -C 'jiaoshibo@outlook.com' -t rsa
 ```
 4. 输入账号和用户名
 ```
-git config --global user.email "741205360@qq.com"
-git config --global user.name "lihongmi"
+git config --global user.email "exp@exp.com"
+git config --global user.name "username"
 ```
 5. 上传源代码
 ```
@@ -20,7 +20,7 @@ git init
 git add *
 git commit -m "first commit"
 
-git remote add origin https://github.com/lihongmi/canvas_sub.git
+git remote add origin https://github.com/......
 git push -u origin master
 ```
 
