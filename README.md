@@ -12,7 +12,7 @@
 
 ## 技术栈
 
-##### vue2 + vuex + vue-router + webpack + ES6/7 + fetch + sass + flex + svg
+##### vue2 + vue-cli + vuex + vue-router + vue-resource/axios + webpack + ES6/7 + fetch + sass + flex + svg + git
 
 ## 说明
 
