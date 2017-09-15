@@ -1,7 +1,15 @@
-# vue-mt
-仿美团app 技术点  * vue2 * vue-cli * vue-router+vuex * vue-resource/axios * flex sass * svg * es6 * git
+## 仿美团项目
 
+### 技能点
 
+* vue
+* vue-cli
+* vue-router+vuex
+* vue-resource/axios
+* flex sass
+* svg
+* es6
+* git
 
 ### ui 库
 1. https://vux.li/#/ 
@@ -9,13 +17,12 @@
 3. http://www.muse-ui.org/#/index
 4. http://mint-ui.github.io/#!/zh-cn 
 
-
-
 ### git
 master  主分支
 
-rice
+rice ...  个人分支
 
 dev     开发分支 
 
-teach    
+teach   视频分支
+
