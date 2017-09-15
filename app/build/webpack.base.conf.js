@@ -3,11 +3,22 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
+
+const museUiThemePath = path.join(
+  __dirname,
+  'node_modules',
+  'muse-ui',
+  'src/styles/themes/variables/default.less'
+)
+
+const vuxLoader = require('vux-loader')
+
+
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-module.exports = {
+const originalConfig=module.exports = {
   entry: {
     app: './src/main.js'
   },
@@ -27,6 +38,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /muse-ui.src.*?js$/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -61,6 +76,18 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       }
-    ]
+    ],
+    resolve: {
+      alias: {
+        'muse-components': 'muse-ui/src'
+      }
+    }
   }
 }
+
+const webpackConfig = originalConfig;
+
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: ['vux-ui']
+});
+
