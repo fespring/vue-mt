@@ -72,12 +72,17 @@
 
 ### 商铺列表页
 
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.gif" width="365" height="619"/>
+<img src="https://github.com/Besmall/vue-mt/blob/master/src/components/splb.png" width="365" height="619"/> <img src="https://github.com/Besmall/vue-mt/blob/master/src/components/splb.gif" width="365" height="619"/>
 
 
 ### 商铺筛选页
 
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.gif" width="365" height="619"/>
+<img src="https://github.com/Besmall/vue-mt/blob/master/src/components/spsx.png" width="365" height="619"/> <img src="https://github.com/Besmall/vue-mt/blob/master/src/components/spsx.gif" width="365" height="619"/>
+
+### 餐饮列表
+
+<img src="https://github.com/Besmall/vue-mt/blob/master/src/components/canyin.png" width="365" height="619"/>
+
 
 # 项目布局
 ```
