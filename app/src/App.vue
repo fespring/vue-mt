@@ -2,13 +2,17 @@
 <div>
  
   <router-view></router-view>
-  <mu-tabs :value="activeTab" @change="handleTabChange" id="footer">
-    <mu-tab value="/home"  icon="home" title="首页"/>
-    <mu-tab value="/recent" icon="pin_drop" title="附近"/>
-    <mu-tab value="/guang" icon="language" title="逛一逛"/>
-    <mu-tab value="/order" icon="assignment" title="订单"/>
-    <mu-tab value="/me" icon="account_circle" title="我的"/>
-  </mu-tabs>
+  
+
+  <mu-paper id="footer">
+  <mu-bottom-nav :value="bottomNav" @change="handleChange">
+    <mu-bottom-nav-item value="/home" title="首页" icon="home"/>
+    <mu-bottom-nav-item value="/recent" title="附近" icon="pin_drop"/>
+    <mu-bottom-nav-item value="/guang" title="逛一逛" icon="language"/>
+    <mu-bottom-nav-item value="/order" title="订单" icon="assignment"/>
+     <mu-bottom-nav-item value="/me" title="我的" icon="account_circle"/>
+  </mu-bottom-nav>
+</mu-paper>
 </div>
 </template>
 
@@ -16,22 +20,24 @@
 
 import Vue from 'vue'
 import 'muse-components/styles/base.less' // 加载基础的样式
-import Tabs from 'muse-components/tabs/tabs'
-import Tab from 'muse-components/tabs/tab'
-Vue.component(Tabs.name, Tabs)
-Vue.component(Tab.name, Tab)
+import Paper from 'muse-components/paper/paper'
+import BottomNav from 'muse-components/bottomNav/bottomNav'
+import BottomNavItem from 'muse-components/bottomNav/BottomNavItem'
+Vue.component(Paper.name, Paper)
+Vue.component(BottomNav.name, BottomNav)
+Vue.component(BottomNavItem.name, BottomNavItem)
 
 export default {
   data () {
     return {
-      activeTab: 'tab1'
+     
+      bottomNav: '/home'
     }
   },
   methods: {
-    handleTabChange (val) {
+    handleChange (val) {
     
-      this.activeTab = val
-
+     this.bottomNav = val
        this.$router.push(val);
     }
     
