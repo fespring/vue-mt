@@ -14,6 +14,11 @@
 ### git
 master  主分支
 
+rice
+
 dev     开发分支  录制视频
+
+
+
 
 
