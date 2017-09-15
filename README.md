@@ -14,7 +14,16 @@
 ### git
 master  主分支
 
-dev     开发分支  录制视频
+rice
 
-test    test 分支 写测试
+dev     开发分支 
 
+<<<<<<< HEAD
+huam
+手里的看法简历上的飞机了
+=======
+teach    
+
+>>>>>>> rice
+
+士大夫士大夫发
