@@ -8,3 +8,13 @@
 2. https://github.com/youzan/vant
 3. http://www.muse-ui.org/#/index
 4. http://mint-ui.github.io/#!/zh-cn 
+
+
+
+### git
+master  主分支
+
+dev     开发分支  录制视频
+
+test    test 分支 写测试
+
