@@ -19,7 +19,6 @@ git config --global user.name "username"
 git init
 git add *
 git commit -m "first commit"
-
 git remote add origin https://github.com/...
 git push -u origin master
 ```
@@ -49,13 +48,12 @@ git reset 哈希值
 11. 合并分支
 ```
 git checkout dev
-
 git merge jiaoshibo
 ```
 
 10. 展示个人项目
 ```
 创建 gh-pages 分支
-https://lihongmi.github.io/canvas_sub
+展示地址：
 https://jiaoshibo.github.io/Snake
 ```
