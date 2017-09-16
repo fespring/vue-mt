@@ -21,6 +21,6 @@
 
 <style>
     .accordion{
-        height:2rem;
+        height:1.2rem;
     }
 </style>

@@ -41,9 +41,7 @@ export default {
 <style>
 
 
-html:{
-  font-size:100px;
-}
+
 #footer {
   position:fixed;
   left:0;
