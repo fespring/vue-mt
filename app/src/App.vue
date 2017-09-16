@@ -1,11 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <mu-appbar title="Title">
+     
+    </mu-appbar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+
+import Vue from 'vue'
+import 'muse-components/styles/base.less' // 加载基础的样式
+
+
+
 export default {
   name: 'app'
 }

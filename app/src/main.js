@@ -7,7 +7,6 @@ import store from './vuex'
 
 
 
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
