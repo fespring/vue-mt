@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import store from './vuex'
 
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
+Vue.use(MuseUI)
 
 
 
