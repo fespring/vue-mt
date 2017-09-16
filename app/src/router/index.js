@@ -1,15 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Recents from '@/pages/Recents'
+import Favorites from '@/pages/Favorites'
+import Nearbay from '@/pages/Nearbay'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+      path: '/recents',
+      name:'recents',
+      component:Recents
+    },
+    {
+      path:'/favorites',
+      name:'favorites',
+      component:Favorites
+    },
+    {
+      path:'/nearbay',
+      name:'nearbay',
+      component:Nearbay
     }
   ]
 })
