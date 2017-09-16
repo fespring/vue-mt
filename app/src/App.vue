@@ -18,6 +18,7 @@
 <script>
 
 import Vue from 'vue'
+
 import 'muse-components/styles/base.less' // 加载基础的样式
 import Paper from 'muse-components/paper/paper'
 import BottomNav from 'muse-components/bottomNav/bottomNav'
@@ -25,6 +26,9 @@ import BottomNavItem from 'muse-components/bottomNav/BottomNavItem'
 Vue.component(Paper.name, Paper)
 Vue.component(BottomNav.name, BottomNav)
 Vue.component(BottomNavItem.name, BottomNavItem)
+
+
+
 export default {
   data () {
     return {
@@ -35,7 +39,7 @@ export default {
   methods: {
     handleChange (val) {
     
-     this.bottomNav = val
+       this.bottomNav = val
        this.$router.push(val);
     }
     
@@ -45,7 +49,7 @@ export default {
 
 <style>
 #footer {
-  position:absolute;
+  position:fixed;
   left:0;
   right:0;
   bottom:0;
