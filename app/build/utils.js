@@ -9,7 +9,6 @@ exports.assetsPath = function (_path) {
   return path.posix.join(assetsSubDirectory, _path)
 }
 
-
 exports.cssLoaders = function (options) {
   options = options || {}
 
@@ -20,13 +19,7 @@ exports.cssLoaders = function (options) {
       sourceMap: options.sourceMap
     }
   }
-const museUiThemePath = path.join(
-  __dirname,
-  '..',
-  'node_modules',
-  'muse-ui',
-  'src/styles/themes/variables/teal.less'
-)
+
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
     var loaders = [cssLoader]
@@ -55,19 +48,13 @@ const museUiThemePath = path.join(
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
-    less: generateLoaders('less',{
-                                    globalVars: {
-                                      museUiTheme: `'${museUiThemePath}'`,
-                                    }
-                                  }),
+    less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
 }
-
-
 
 // Generate loaders for standalone style files (outside of .vue)
 exports.styleLoaders = function (options) {

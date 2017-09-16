@@ -3,15 +3,6 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
-const museUiThemePath = path.join(
-  __dirname,
-  'node_modules',
-  'muse-ui',
-  'src/styles/themes/variables/default.less'
-)
-
-
-
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -32,16 +23,10 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'muse-components': 'muse-ui/src',
     }
   },
   module: {
     rules: [
-        {
-        test: /muse-ui.src.*?js$/,
-        loader: 'babel-loader'
-      },
-      
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -79,5 +64,3 @@ module.exports = {
     ]
   }
 }
-
-

@@ -1,44 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import Home from '@/pages/Home'
-import Recent from '@/pages/Recent'
-import Guang from '@/pages/Guang'
+import Firstpage from '@/pages/Recents'
+import Goshopping from '@/pages/Favorites'
+import Nearbay from '@/pages/Nearbay'
 import Order from '@/pages/Order'
-import Me from '@/pages/Me'
+import Mine from '@/pages/Mine'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path:'/',
-      redirect:'/home'
+      path: '/firstpage',
+      name:'firsepage',
+      component:Firstpage
     },
     {
-      path: '/home',
-      name: 'home',
-      component: Home
+      path:'/goshopping',
+      name:'goshopping',
+      component:Goshopping
     },
     {
-      path: '/recent',
-      name: 'recent',
-      component: Recent
+      path:'/nearbay',
+      name:'nearbay',
+      component:Nearbay
     },
     {
-      path: '/guang',
-      name: 'guang',
-      component: Guang
+      path:'/order',
+      name:'order',
+      component:Order
     },
     {
-      path: '/order',
-      name: 'order',
-      component: Order
-    },
-    {
-      path: '/me',
-      name: 'me',
-      component: Me
+      path:'/mine',
+      name:'mine',
+      component:Mine
     }
   ]
 })
