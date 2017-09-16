@@ -30,28 +30,6 @@ Vue.component(BottomNavItem.name, BottomNavItem)
 export default {
   data () {
     return {
-<<<<<<< HEAD
-      activeTab: 'tab1'
-    }
-  },
-  methods: {
-    handleTabChange (val) {
-      this.activeTab = val
-      this.$router.push(val)
-    }
-  }
-}
-</script>
-
-<style>
-#footer{
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-</style>
-=======
      
       bottomNav: '/home'
     }
@@ -79,4 +57,3 @@ export default {
       z-index:1;
     }
 </style>
->>>>>>> rice
