@@ -1,23 +1,39 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div >
+    <mu-paper id = "footer">
+      <mu-bottom-nav :value="bottomNav" @change="handleChange">
+        <mu-bottom-nav-item value="/home" title="首页" icon="home"/>
+        <mu-bottom-nav-item value="/nearby" title="附近" icon="pin_drop"/>
+        <mu-bottom-nav-item value="/visit" title="逛一逛" icon="language"/>
+        <mu-bottom-nav-item value="/order" title="订单" icon="assignment"/>
+        <mu-bottom-nav-item value="/me" title="我的" icon="account_circle"/>
+      </mu-bottom-nav>
+  </mu-paper>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  data () {
+    return {
+      bottomNav: '/home'
+    }
+  },
+  methods: {
+    handleChange (val) {
+      this.bottomNav = val
+      this.$router.push(val);
+    }
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#footer {
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
 }
 </style>
