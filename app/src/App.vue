@@ -1,15 +1,15 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <template>
-    <mu-tabs :value="activeTab" @change="handleTabChange" id="footer">
-      <mu-tab value="/firstpage" icon="phone" title="首页"/>
-      <mu-tab value="/goshopping" icon="favorite" title="逛一逛"/>
-      <mu-tab value="/nearbay" icon="person_pin" title="附近"/>
-      <mu-tab value="/order" icon="person_pin" title="订单"/>
-      <mu-tab value="/mine" icon="person_pin" title="我的"/>
-    </mu-tabs>
-</template>
+    <mu-paper>
+      <mu-bottom-nav :value="bottomNav" @change="handleChange" id="footer">
+        <mu-bottom-nav-item value="/home" title="首页" icon="home"/>
+        <mu-bottom-nav-item value="/nearby" title="附近" icon="pin_drop"/>
+        <mu-bottom-nav-item value="/goshopping" title="逛一逛" icon="language"/>
+        <mu-bottom-nav-item value="order" title="订单" icon="receipt"/>
+        <mu-bottom-nav-item value="mine" title="我的" icon="person"/>
+      </mu-bottom-nav>
+    </mu-paper>
   </div>
 </template>
 
@@ -17,12 +17,12 @@
 export default {
   data () {
     return {
-      activeTab: 'tab1'
+      bottomNav: 'recents'
     }
   },
   methods: {
-    handleTabChange (val) {
-      this.activeTab = val
+    handleChange (val) {
+      this.bottomNav = val,
       this.$router.push(val)
     }
   }

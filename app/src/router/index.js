@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Firstpage from '@/pages/Recents'
-import Goshopping from '@/pages/Favorites'
-import Nearbay from '@/pages/Nearbay'
+import Home from '@/pages/Home'
+import Nearby from '@/pages/Nearby'
+import Goshopping from '@/pages/Goshopping'
 import Order from '@/pages/Order'
 import Mine from '@/pages/Mine'
 
@@ -11,9 +11,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/firstpage',
-      name:'firsepage',
-      component:Firstpage
+      path: '/home',
+      name:'home',
+      component:Home
     },
     {
       path:'/goshopping',
@@ -21,9 +21,9 @@ export default new Router({
       component:Goshopping
     },
     {
-      path:'/nearbay',
-      name:'nearbay',
-      component:Nearbay
+      path:'/nearby',
+      name:'nearby',
+      component:Nearby
     },
     {
       path:'/order',
