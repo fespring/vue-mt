@@ -1,22 +1,10 @@
 <template>
-<<<<<<< HEAD
-  <div>
-    <h1>{{ msg }}</h1>
-=======
   <div class="hello">
-    <h1>我是订单</h1>
->>>>>>> bf97d071776b89ddeaf5058ed8beb63ceb59561e
+   <h1>我是逛一逛</h1>
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
-export default {
-  name: 'order',
-  data () {
-    return {
-      msg: '我是订单页面'
-=======
 
 
 export default {
@@ -24,7 +12,6 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
->>>>>>> bf97d071776b89ddeaf5058ed8beb63ceb59561e
     }
   }
 }
@@ -49,8 +36,4 @@ li {
 a {
   color: #42b983;
 }
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> bf97d071776b89ddeaf5058ed8beb63ceb59561e
