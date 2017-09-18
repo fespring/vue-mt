@@ -25,16 +25,16 @@
                 周边游
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
-                机票/火车票
+                火车票
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
                 KTV
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
-                丽人/美发
+                美发
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
-                美团旅行
+                旅行
                 </mu-flexbox-item>
             </mu-flexbox>
             <mu-flexbox class="mar">
@@ -42,16 +42,16 @@
                 景点
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
-                婚纱摄影
+                摄影
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
-                足疗按摩
+                按摩
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
                 鲜花
                 </mu-flexbox-item>
                 <mu-flexbox-item class="flex-demo">
-                全部分类
+                全部
                 </mu-flexbox-item>
             </mu-flexbox>
         </div>
