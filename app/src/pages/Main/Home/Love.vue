@@ -25,6 +25,7 @@ export default {
       list:[],
       page: 0,
       loading: false,
+      loaddingAll:false,
       scroller: null
     }
   },
@@ -34,12 +35,18 @@ export default {
   },
   methods: {
     loadMore () {
+      if(this.loading)return false;
+      if(this.loaddingAll)return false;
       this.loading = true;
 
       const params = Object.assign({},{page:++this.page});
      	getLovers(params).then((res) => {
+          if(res.data.length==0){
+            this.loaddingAll=true;
+            return false;
+          }
           this.loading = false
-          this.list = res.data;
+          this.list = [...this.list,...res.data];
       }).catch((err) => {
         console.log(err);
       });
