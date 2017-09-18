@@ -23,10 +23,15 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'muse-components': 'muse-ui/src'
     }
   },
   module: {
     rules: [
+      {
+        test: /muse-ui.src.*?js$/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
