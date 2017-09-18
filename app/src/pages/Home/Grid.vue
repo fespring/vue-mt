@@ -1,31 +1,16 @@
 <template>
-<div>
-  <mu-flexbox>
-    <mu-flexbox-item class="flex-demo">
-     <img src="1.png"/>
-    </mu-flexbox-item>
-    <mu-flexbox-item class="flex-demo">
-      <img src="2.png"/>
-    </mu-flexbox-item>
-    <mu-flexbox-item class="flex-demo">
-      <img src="3.png"/>
-    </mu-flexbox-item>
-    <mu-flexbox-item class="flex-demo">
-      <img src="4.png"/>
-    </mu-flexbox-item>
-    <mu-flexbox-item class="flex-demo">
-      <img src="5.png"/>
-    </mu-flexbox-item>
-    
-  </mu-flexbox>
-  <mu-flexbox class="mt8" orient="vertical">
-    <mu-flexbox-item order="0" class="flex-demo">
-      9
-    </mu-flexbox-item>
-    <mu-flexbox-item order="2" class="flex-demo">
-      10
-    </mu-flexbox-item>
-  </mu-flexbox>
+<div class="demo-grid">
+  <mu-row gutter>
+    <mu-col width="33" tablet="33" desktop="33">col-100<br/>tablet-50<br/>desktop-33</mu-col>
+    <mu-col width="33" tablet="33" desktop="33">col-100<br/>tablet-50<br/>desktop-33</mu-col>
+    <mu-col width="33" tablet="33" desktop="33">col-100<br/>tablet-50<br/>desktop-33</mu-col>
+  </mu-row>
+  <mu-row gutter>
+    <mu-col width="25" tablet="25" desktop="25">col-50<br/>tablet-30<br/>desktop-25</mu-col>
+    <mu-col width="25" tablet="25" desktop="25">col-50<br/>tablet-30<br/>desktop-25</mu-col>
+    <mu-col width="25" tablet="25" desktop="25">col-50<br/>tablet-30<br/>desktop-25</mu-col>
+    <mu-col width="25" tablet="25" desktop="25">col-50<br/>tablet-30<br/>desktop-25</mu-col>
+  </mu-row>
   
 </div>
 </template>
@@ -34,13 +19,13 @@
         name:"grid",
     }
 </script>
-<style>
-
-.flex-demo {
-  width:20%;
-  height: 0.6rem;
-  background-color: #ccc;
+<style lang="css">
+.demo-grid div[class*="col-"] {
+  background: #fff;
   text-align: center;
-  line-height:0.6rem;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 8px;
 }
 </style>

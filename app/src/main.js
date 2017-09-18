@@ -18,10 +18,18 @@ import textField from 'muse-components/textField/textField'
 import flatButton from 'muse-components/flatButton/flatButton'
 import iconButton from 'muse-components/iconButton/iconButton'
 import flexbox from 'muse-components/flexbox/flexbox'
+import flexboxItem from 'muse-components/flexbox/flexboxItem'
+
 import infiniteScroll from 'muse-components/infiniteScroll/infiniteScroll'
 import list from 'muse-components/list/list'
+import listItem from 'muse-components/list/listItem'
 import divider from 'muse-components/divider/divider'
-import item from 'muse-components/item/item'
+
+import 'muse-components/grid/grid.less' 
+import col from 'muse-components/grid/col'
+import row from 'muse-components/grid/row'
+
+
 
 Vue.component(Paper.name, Paper)
 Vue.component(BottomNav.name, BottomNav)
@@ -31,10 +39,16 @@ Vue.component(textField.name, textField)
 Vue.component(flatButton.name, flatButton)
 Vue.component(iconButton.name, iconButton)
 Vue.component(flexbox.name, flexbox)
+Vue.component(flexboxItem.name, flexboxItem)
+
 Vue.component(infiniteScroll.name, infiniteScroll)
 Vue.component(list.name, list)
+Vue.component(listItem.name, listItem)
 Vue.component(divider.name, divider)
-Vue.component(item.name, item)
+
+Vue.component(col.name, col)
+Vue.component(row.name, row)
+
 
 
 

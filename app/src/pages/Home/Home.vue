@@ -2,16 +2,18 @@
   <div>
     <search></search>
     <accordion></accordion>
+    <flex></flex>
     <grid></grid>
-    <infiniteScroll></infiniteScroll>
+    <haxi></haxi>
   </div>
 </template>
 
 <script>
 import Search from './Search'
 import Accordion from './Accordion'
+import Flex from './Flex'
 import Grid from './Grid'
-import InfiniteScroll from 'InfiniteScroll'
+import Haxi from './Haxi'
 
 
 
@@ -20,8 +22,10 @@ export default {
   components:{
     Search,
     Accordion,
+    Flex,
     Grid,
-    InfiniteScroll
+    Haxi
+
   }
 }
 </script>

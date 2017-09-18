@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name:"infiniteScroll",
+    name:"haxi",
   data () {
     const list = []
     for (let i = 0; i < 10; i++) {
@@ -45,7 +45,7 @@ export default {
 
 <style lang="css">
 .demo-infinite-container{
-  width: 256px;
+ 
   height: 300px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
