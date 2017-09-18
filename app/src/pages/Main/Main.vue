@@ -14,23 +14,23 @@
         <mt-tabbar v-model="selected">
           <mt-tab-item id="home">
        
-            tab1
+            首页
           </mt-tab-item>
           <mt-tab-item id="recent">
            
-            tab2
+            附近
           </mt-tab-item>
           <mt-tab-item id="guang">
            
-            tab3
+            逛一逛
           </mt-tab-item>
           <mt-tab-item id="order">
            
-            tab4
+            订单
           </mt-tab-item>
             <mt-tab-item id="me">
            
-            tab4
+            我的
           </mt-tab-item>
       </mt-tabbar>
     </div>
