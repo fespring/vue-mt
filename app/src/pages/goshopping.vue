@@ -5,7 +5,5 @@
 </template>
 
 <style>
-    div{
-        font-size: 21px;
-    }
+
 </style>

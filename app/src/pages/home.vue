@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="a">
     <tit></tit>
     <swipe></swipe>
     <like></like>
@@ -20,4 +20,9 @@ export default {
   }
 }
 </script>
+<style>
+.a{
+  margin-bottom: 0.65rem;
+}
+</style>
 
