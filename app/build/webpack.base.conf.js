@@ -3,15 +3,6 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
-const museUiThemePath = path.join(
-  __dirname,
-  'node_modules',
-  'muse-ui',
-  'src/styles/themes/variables/default.less'
-)
-
-
-
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
