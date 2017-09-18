@@ -56,7 +56,8 @@
             </mu-flexbox>
         </div>
         <div class="tuijian">
-            <mu-flexbox gutter="2">
+            <!-- parseInt(2) -->
+            <mu-flexbox :gutter=2>
                 <mu-flexbox-item class="demo">
                 限时抢购
                 </mu-flexbox-item>
@@ -67,7 +68,7 @@
                 免费拍
                 </mu-flexbox-item>
             </mu-flexbox>
-            <mu-flexbox gutter="2">
+            <mu-flexbox :gutter=2>
                 <mu-flexbox-item class="demo">
                 特惠观影
                 </mu-flexbox-item>
