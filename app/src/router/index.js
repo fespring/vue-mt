@@ -14,14 +14,14 @@ import meiShi from '@/pages/meiShi'
 
 Vue.use(Router)
 
-export default new Router({
+const router= new Router({
   routes: [
     {
       path:'/',
       name:"main",
       component: Main,
-      redirect:"/home",
       children:[
+        { path: '', component: Home },
         {
           path: '/home',
           name: 'home',
@@ -55,4 +55,8 @@ export default new Router({
       component: meiShi
     }
   ]
-})
+});
+import vueg from 'vueg'    
+import 'vueg/css/transition-min.css'
+Vue.use(vueg, router);
+export default router;

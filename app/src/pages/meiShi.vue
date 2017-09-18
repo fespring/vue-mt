@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="background:red;">
    <mu-appbar class="search">
         <mu-icon-button @click="back" icon="chevron_left" slot="left"/>
         <mu-text-field icon="search" class="appbar-search-field" hintText="输入商家名、品类、或商圈" fullWidth />

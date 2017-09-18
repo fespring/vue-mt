@@ -29,7 +29,7 @@ import list from 'muse-components/list/list'
 import listItem from 'muse-components/list/listItem'
 import subHeader from 'muse-components/subHeader/subHeader'
 import divider from 'muse-components/divider/divider'
-import refreshControl from 'muse-components/refreshControl/refreshControl'
+import infiniteScroll from 'muse-components/infiniteScroll/infiniteScroll'
 
 
 
@@ -53,17 +53,22 @@ Vue.component(list.name, list)
 Vue.component(listItem.name, listItem)
 Vue.component(subHeader.name, subHeader)
 Vue.component(divider.name, divider)
-Vue.component(refreshControl.name, refreshControl)
+Vue.component(infiniteScroll.name, infiniteScroll)
 
 
 
 //导入 mint-ui 的库
-import { Swipe, SwipeItem,InfiniteScroll} from 'mint-ui';
+import { Swipe, SwipeItem} from 'mint-ui';
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
-//Vue.component(InfiniteScroll.name, InfiniteScroll);
-Vue.use(InfiniteScroll);
+
+import { Tabbar, TabItem } from 'mint-ui';
+
+Vue.component(Tabbar.name, Tabbar);
+Vue.component(TabItem.name, TabItem);
+
+
 
 
 /* eslint-disable no-new */

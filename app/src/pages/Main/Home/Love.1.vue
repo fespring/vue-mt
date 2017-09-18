@@ -1,20 +1,14 @@
 <template>
- 
-   
-            <div class="demo-infinite-container">
-               <mu-sub-header>猜你喜欢</mu-sub-header>
-              <mu-divider/>
-            <mu-list>
-              <template v-for="item in list">
-                <mu-list-item :title="item"/>
-                <mu-divider/>
-              </template>
-            </mu-list>
-            <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
-          </div>
-    
+<div class="demo-infinite-container">
+  <mu-list>
+    <template v-for="item in list">
+      <mu-list-item :title="item"/>
+      <mu-divider/>
+    </template>
+  </mu-list>
+  <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
+</div>
 </template>
-
 
 <script>
 export default {
@@ -48,15 +42,12 @@ export default {
 }
 </script>
 
-
-<style scoped>
+<style lang="css">
 .demo-infinite-container{
-  width: 100%;
-  height:500px;
+  width: 256px;
+  height: 300px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   border: 1px solid #d9d9d9;
 }
 </style>
-
-
