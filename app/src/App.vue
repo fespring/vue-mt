@@ -38,5 +38,6 @@ html{
   left: 0;
   right: 0;
   bottom: 0;
+  border-top: 0.02rem solid #f0f0f0;
 }
 </style>
