@@ -3,18 +3,15 @@
 	 <mu-sub-header>猜你喜欢</mu-sub-header>
 	 <mu-divider/>
 
-	 <div class="demo-refresh-container">
-    <mu-refresh-control :refreshing="refreshing" :trigger="trigger" @refresh="refresh"/>
+  
     <mu-list>
       <template v-for="item in list">
         <mu-list-item disableRipple :title="item"/>
         <mu-divider/>
       </template>
     </mu-list>
-  </div>
+    <mu-refresh-control :refreshing="refreshing" :trigger="trigger" @refresh="refresh"/>
 
-
-	
 </div>
 </template>
 <script>
@@ -37,6 +34,7 @@ export default {
   },
   methods: {
     refresh () {
+      console.log(Math.random());
       this.refreshing = true
       setTimeout(() => {
         const list = []
@@ -52,13 +50,4 @@ export default {
 }
 </script>
 
-<style>
-.demo-refresh-container{
-  height: 300px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid #d9d9d9;
-  position: relative;
-  user-select: none;
-}
-</style>
+
