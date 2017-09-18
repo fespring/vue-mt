@@ -2,7 +2,7 @@
   <div>
   <mu-flexbox class="mt8">
       <mu-flexbox-item class="flex-demo">
-        美食
+        <router-link to="/meishi">美食</router-link>
       </mu-flexbox-item>
       <mu-flexbox-item class="flex-demo">
         电影／演出

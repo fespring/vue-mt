@@ -1,0 +1,30 @@
+<template>
+<div>
+    <button @click="back">返回</button>
+    <br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+    美食<br/>
+</div>
+</template>
+<script>
+export default{
+    methods:{
+        back(){
+            this.$router.go(-1);
+        }
+    }
+}
+</script>
