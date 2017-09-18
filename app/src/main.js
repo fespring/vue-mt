@@ -58,11 +58,12 @@ Vue.component(refreshControl.name, refreshControl)
 
 
 //导入 mint-ui 的库
-import { Swipe, SwipeItem } from 'mint-ui';
+import { Swipe, SwipeItem,InfiniteScroll} from 'mint-ui';
+
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
-
-
+//Vue.component(InfiniteScroll.name, InfiniteScroll);
+Vue.use(InfiniteScroll);
 
 
 /* eslint-disable no-new */

@@ -3,22 +3,17 @@
               <mu-sub-header>猜你喜欢</mu-sub-header>
               <mu-divider/>
               <div class="demo-refresh-container">  
-                  
-                  <mu-list>
-                    <template v-for="item in list">
-                      <mu-list-item disableRipple :title="item"/>
-                  
-                    </template>
-                  
-                  </mu-list>
-                  <mu-refresh-control :refreshing="refreshing" :trigger="trigger" @refresh="refresh"/>
-                    <div class="tip" v-show="!refreshing">下拉加载更多请</div>
-                    <br/>
-                    <br/>
+                <ul
+                  v-infinite-scroll="loadMore"
+                  infinite-scroll-disabled="loading"
+                  :infinite-scroll-distance="num">
+                  <li v-for="item in list">{{ item }}</li>
+                </ul>
             </div>
       </div>
 </template>
 <script>
+
 export default {
   name:'lover',
    data () {
@@ -29,26 +24,19 @@ export default {
     return {
       list,
       num: 10,
-      refreshing: false,
-      trigger: null
+      loading:false
     }
   },
-  mounted () {
-    this.trigger = this.$el
-  },
   methods: {
-    refresh () {
-      console.log(Math.random());
-      this.refreshing = true
-      setTimeout(() => {
-        const list = []
-        for (let i = this.num; i < this.num + 10; i++) {
-          list.push('item' + (i + 1))
-        }
-        this.list = [...this.list,...list];
-        this.num += 10
-        this.refreshing = false
-      }, 2000)
+   loadMore() {
+      this.loading = true;
+  setTimeout(() => {
+    let last = this.list[this.list.length - 1];
+    for (let i = 1; i <= 10; i++) {
+      this.list.push(last + i);
+    }
+    this.loading = false;
+  }, 2500);
     }
   }
 }
