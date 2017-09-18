@@ -6,7 +6,7 @@
               <mu-divider/>
             <mu-list>
               <template v-for="item in list">
-                <mu-list-item :title="item"/>
+                <mu-list-item :title="item.name"/>
                 <mu-divider/>
               </template>
             </mu-list>
@@ -17,32 +17,33 @@
 
 
 <script>
+ import {getLovers} from '@/api/lover'
+
 export default {
   data () {
-    const list = []
-    for (let i = 0; i < 10; i++) {
-      list.push('item' + (i + 1))
-    }
     return {
-      list,
-      num: 10,
+      list:[],
+      page: 0,
       loading: false,
       scroller: null
     }
   },
   mounted () {
     this.scroller = this.$el
+    this.loadMore();
   },
   methods: {
     loadMore () {
-      this.loading = true
-      setTimeout(() => {
-        for (let i = this.num; i < this.num + 10; i++) {
-          this.list.push('item' + (i + 1))
-        }
-        this.num += 10
-        this.loading = false
-      }, 2000)
+      this.loading = true;
+
+      const params = Object.assign({},{page:++this.page});
+     	getLovers(params).then((res) => {
+          this.loading = false
+          this.list = res.data;
+      }).catch((err) => {
+        console.log(err);
+      });
+
     }
   }
 }

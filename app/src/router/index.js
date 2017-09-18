@@ -18,10 +18,10 @@ const router= new Router({
   routes: [
     {
       path:'/',
-      name:"main",
+   
       component: Main,
       children:[
-        { path: '', component: Home },
+        { path: '', name:"main", component: Home },
         {
           path: '/home',
           name: 'home',

@@ -68,8 +68,9 @@ import { Tabbar, TabItem } from 'mint-ui';
 Vue.component(Tabbar.name, Tabbar);
 Vue.component(TabItem.name, TabItem);
 
-
-
+//网络请求
+import axios from 'axios';
+Vue.prototype.$axios = axios;
 
 /* eslint-disable no-new */
 new Vue({
