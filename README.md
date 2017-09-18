@@ -27,3 +27,12 @@ rice ...  个人分支
 dev     开发分支 
 
 teach   视频分支
+
+```
+npm install
+
+npm install --save-dev less-loader
+npm install --save-dev less
+
+
+```

@@ -1,13 +1,14 @@
 <template>
-  <vue></vue>
+  <tit></tit>
 </template>
 
 <script>
-import Nav from './home/Nav'
+import Tit from './home/Nav'
 export default {
   name:'home',
   components:{
-      Home
+      Tit
   }
 }
 </script>
+

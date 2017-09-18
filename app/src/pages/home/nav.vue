@@ -1,12 +1,14 @@
+
 <template>
-    <mu-appbar title="Title">
-    <mu-text-field icon="search" class="appbar-search-field"  slot="right" hintText="请输入搜索内容"/>
-    <mu-flat-button color="white" label="flat Button" slot="right"/>
-    </mu-appbar>
+     <mu-appbar>
+        <mu-flat-button label="保定" class="demo-flat-button" labelPosition="before" icon="expand_more" secondary/>
+        <mu-text-field icon="search" class="appbar-search-field" hintText="搜索" fullWidth/>
+        <mu-flat-button label="扫一扫" slot="right" class="demo-flat-button" icon="crop_free" primary/>
+     </mu-appbar>
 </template>
 <script>
 export default {
-  name:'nav'
+  name:'tit'
 }
 </script>
 
