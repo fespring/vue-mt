@@ -2,12 +2,14 @@
   <div>
     <search></search>
     <accordion></accordion>
+ 
   </div>
 </template>
 
 <script>
 import Search from './Search'
 import Accordion from './Accordion'
+
 
 export default {
   name: 'home',
