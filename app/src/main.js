@@ -17,6 +17,11 @@ import appBar from 'muse-components/appBar/appBar'
 import textField from 'muse-components/textField/textField'
 import flatButton from 'muse-components/flatButton/flatButton'
 import iconButton from 'muse-components/iconButton/iconButton'
+import flexbox from 'muse-components/flexbox/flexbox'
+import infiniteScroll from 'muse-components/infiniteScroll/infiniteScroll'
+import list from 'muse-components/list/list'
+import divider from 'muse-components/divider/divider'
+import item from 'muse-components/item/item'
 
 Vue.component(Paper.name, Paper)
 Vue.component(BottomNav.name, BottomNav)
@@ -25,6 +30,12 @@ Vue.component(appBar.name, appBar)
 Vue.component(textField.name, textField)
 Vue.component(flatButton.name, flatButton)
 Vue.component(iconButton.name, iconButton)
+Vue.component(flexbox.name, flexbox)
+Vue.component(infiniteScroll.name, infiniteScroll)
+Vue.component(list.name, list)
+Vue.component(divider.name, divider)
+Vue.component(item.name, item)
+
 
 
 //导入 mint-ui 的库
