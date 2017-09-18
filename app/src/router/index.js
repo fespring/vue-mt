@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Home from '@/pages/Home/Home'
-import Nearby from '@/pages/Nearby'
-import Visit from '@/pages/Visit'
-import Order from '@/pages/Order'
-import Me from '@/pages/Me'
+import Nearby from '@/pages/Nearby/Nearby'
+import Visit from '@/pages/Visit/Visit'
+import Order from '@/pages/Order/Order'
+import Me from '@/pages/Me/Me'
 
 Vue.use(Router)
 

@@ -25,15 +25,22 @@ export default {
       this.bottomNav = val
       this.$router.push(val);
     }
+  },
+  mounted (){
+    this.bottomNav = this.$route.path;
   }
 }
 </script>
 
-<style>
+<style lang="less">
 #footer {
   position:fixed;
   left:0;
   bottom:0;
   right:0;
+  z-index:1;
+}
+#footer .mu-buttom-item{
+  min-width: 0.5rem;
 }
 </style>
