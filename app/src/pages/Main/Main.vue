@@ -1,7 +1,7 @@
 <template>
     <div>
         <router-view class="rv"></router-view>
-    <!--    <mu-paper id="footer">
+    <mu-paper id="footer">
             <mu-bottom-nav :value="bottomNav" @change="handleChange">
                 <mu-bottom-nav-item value="/home" title="首页" icon="home"/>
                 <mu-bottom-nav-item value="/recent" title="附近" icon="pin_drop"/>
@@ -9,9 +9,9 @@
                 <mu-bottom-nav-item value="/order" title="订单" icon="assignment"/>
                 <mu-bottom-nav-item value="/me" title="我的" icon="account_circle"/>
             </mu-bottom-nav>
-        </mu-paper>-->
+        </mu-paper>
 
-        <mt-tabbar v-model="selected">
+          <!--  <mt-tabbar v-model="selected">
           <mt-tab-item id="home">
        
             首页
@@ -33,6 +33,7 @@
             我的
           </mt-tab-item>
       </mt-tabbar>
+      -->
     </div>
 </template>
 <script>
@@ -79,6 +80,9 @@ export default {
 }
 .rv{
   min-height:100vh;
+}
+#footer .mu-buttom-item {
+  min-width: 0.62rem;
 }
 
 </style>
