@@ -34,7 +34,11 @@ export default {
        this.$router.push(val);
     }
     
+  },
+  mounted(){
+    this.bottomNav=this.$route.path;
   }
+  
 }
 </script>
 

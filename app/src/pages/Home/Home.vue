@@ -7,20 +7,7 @@
               <chanel></chanel>
               <lv-xing></lv-xing>
               <wai-mai></wai-mai>
-             	   <mu-sub-header>猜你喜欢</mu-sub-header>
-                 <mu-divider/>
-            <div class="demo-refresh-container">  
-                    <mu-refresh-control :refreshing="refreshing" :trigger="trigger" @refresh="refresh"/>
-                  <mu-list>
-                    <template v-for="item in list">
-                      <mu-list-item disableRipple :title="item"/>
-                      <mu-divider/>
-                    </template>
-                  </mu-list>
-                
-
-             </div>
-        </div>
+              <love></love>
     </div>
   </div>
 </template>
@@ -70,7 +57,7 @@ export default {
         this.list = [...this.list,...list];
         this.num += 10
         this.refreshing = false
-      }, 2000)
+      }, 50)
     }
   }
 }
@@ -93,15 +80,5 @@ export default {
    overflow:scroll;
  
 }
-.demo-refresh-container{
-   position: relative;
-    height:calc(100%-112px);
 
- 
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid #d9d9d9;
-
-  user-select: none;
-}
 </style>
