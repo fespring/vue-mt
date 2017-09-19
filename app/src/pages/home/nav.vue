@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .appbar-search-field{
   color: #FFF;
   margin-bottom: 0;

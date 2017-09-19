@@ -12,7 +12,7 @@
     name:'swipe'
     }
 </script>
-<style>
+<style scoped>
     .swipe{
         height: 1.2rem
     }

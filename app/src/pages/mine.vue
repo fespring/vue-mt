@@ -3,3 +3,7 @@
       mine
   </div>
 </template>
+
+<style scoped>
+
+</style>
