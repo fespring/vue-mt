@@ -17,45 +17,57 @@
 
      <mu-divider/>
       <div class="demo-refresh-container">  
-        <ul
-          v-infinite-scroll="loadMore"
-          infinite-scroll-disabled="loading"
-          :infinite-scroll-distance="num">
-          <li v-for="item in list">{{ item }}</li>
-        </ul>
+            <mu-list>
+              <template v-for="item in list">
+                <mu-list-item :title="item.name"/>
+                <mu-divider/>
+              </template>
+            </mu-list>
+            <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
     </div>
 </div>
 </template>
 <script>
+ import {getLovers} from '@/api/lover'
     export default {
         name:'meiShi',
          data () {
-    const list = []
-    for (let i = 0; i < 30; i++) {
-      list.push('item' + (i + 1))
-    }
     return {
-      list,
-      num: 30,
-      loading:false
+      list:[],
+      page: 0,
+      loading: false,
+      loaddingAll:false,
+      scroller: null
     }
+  },
+  mounted () {
+    this.scroller = this.$el
+    this.loadMore();
   },
   methods: {
      back(){
                 this.$router.back();
-            },
-   loadMore() {
-      this.loading = true;
-  setTimeout(() => {
-    let last = this.list[this.list.length - 1];
-    for (let i = 1; i <= 10; i++) {
-      this.list.push(last + i);
-    }
-    this.loading = false;
-  }, 1000);
+     },
+    loadMore () {
+        if(this.loading)return false;
+        if(this.loaddingAll)return false;
+        this.loading = true;
+
+        const params = Object.assign({},{page:++this.page});
+        getLovers(params).then((res) => {
+            if(res.data.length==0){
+              this.loaddingAll=true;
+              return false;
+            }
+            this.loading = false
+            this.list = [...this.list,...res.data];
+        }).catch((err) => {
+          console.log(err);
+        });
+
     }
   }
-    }
+}
 </script>
 
 <style lang="less">

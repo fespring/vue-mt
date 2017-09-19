@@ -81,9 +81,12 @@ apiRouter.route('/:apiName')
     var data = JSON.parse(data)
     if (data[req.params.apiName]) {
       var result=data[req.params.apiName];
-     var newData=result.slice((page-1)*10,page*10);
-    
-      res.json(newData);
+      var newData=result.slice((page-1)*10,page*10);
+      
+      setTimeout(function() {
+          res.json(newData);
+      }, 2000);
+     
     }
     else {
       res.send('no such api name')
