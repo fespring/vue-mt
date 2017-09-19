@@ -82,10 +82,10 @@ apiRouter.route('/:apiName')
     if (data[req.params.apiName]) {
       var result=data[req.params.apiName];
       var newData=result.slice((page-1)*10,page*10);
-      
-      setTimeout(function() {
+
+
           res.json(newData);
-      }, 2000);
+
      
     }
     else {

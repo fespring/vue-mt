@@ -40,16 +40,21 @@ export default {
       this.loading = true;
 
       const params = Object.assign({},{page:++this.page});
-     	getLovers(params).then((res) => {
-          if(res.data.length==0){
-            this.loaddingAll=true;
-            return false;
-          }
-          this.loading = false
-          this.list = [...this.list,...res.data];
-      }).catch((err) => {
-        console.log(err);
-      });
+      var that=this;
+      setTimeout(function(){
+        	getLovers(params).then((res) => {
+              if(res.data.length==0){
+                that.loaddingAll=true;
+                return false;
+              }
+              that.loading = false
+              that.list = [...that.list,...res.data];
+          }).catch((err) => {
+            console.log(err);
+          });
+
+      },2000);
+     
 
     }
   }
@@ -58,13 +63,7 @@ export default {
 
 
 <style scoped>
-.demo-infinite-container{
-  width: 100%;
-  height:500px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid #d9d9d9;
-}
+
 </style>
 
 
