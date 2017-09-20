@@ -56,7 +56,13 @@ const router= new Router({
     }
   ]
 });
+
+
+
 import vueg from 'vueg'    
 import 'vueg/css/transition-min.css'
 Vue.use(vueg, router);
+
+
+
 export default router;
