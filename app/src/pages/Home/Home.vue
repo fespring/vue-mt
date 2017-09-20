@@ -5,7 +5,7 @@
       <lanmu></lanmu>
       <ad></ad>
       <shop></shop>
-
+      <div class="mb56"></div> 
   </div>
 </template>
 
@@ -33,5 +33,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.mb56{
+  margin-bottom:.56rem;
+}
 </style>

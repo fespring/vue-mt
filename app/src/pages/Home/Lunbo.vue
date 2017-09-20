@@ -1,7 +1,7 @@
 <template>
 <div>
   <van-swipe auto-play class="lunbo">
-    <van-swipe-item v-for="image in images" :style="'background-color:'+image.color">{{image.text}}</van-swipe-item>
+    <van-swipe-item v-for="(image,index) in images" :key="index" :style="'background-color:'+image.color">{{image.text}}</van-swipe-item>
 </van-swipe>
 
 </div>

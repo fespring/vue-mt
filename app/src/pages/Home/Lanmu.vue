@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="lanmu">
      <mu-flexbox :gutter="20">
         <mu-flexbox-item class="flex-demo1">
         <router-link to="/meishi">美食</router-link>
@@ -62,6 +62,9 @@ export default{
 }
 </script>
 <style scoped>
+.lanmu{
+  padding:0px 0.16rem;
+}
 .mt8 {
   margin-top: 0.08rem;
 }
