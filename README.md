@@ -10,6 +10,8 @@
 * svg
 * es6
 * git
+* axios
+* better-scroll
 
 ### ui 库
 * http://framework7.cn/
