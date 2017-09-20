@@ -12,32 +12,35 @@ export default new Router({
   routes: [
     {
       path:'/',
-      redirect:'/home'
+      component:Main,
+      children:[
+        {
+          path: '/home',
+          name:'home',
+          component:Home
+        },
+        {
+          path:'/goshopping',
+          name:'goshopping',
+          component:Goshopping
+        },
+        {
+          path:'/nearby',
+          name:'nearby',
+          component:Nearby
+        },
+        {
+          path:'/order',
+          name:'order',
+          component:Order
+        },
+        {
+          path:'/mine',
+          name:'mine',
+          component:Mine
+        }
+      ]
     },
-    {
-      path: '/home',
-      name:'home',
-      component:Home
-    },
-    {
-      path:'/goshopping',
-      name:'goshopping',
-      component:Goshopping
-    },
-    {
-      path:'/nearby',
-      name:'nearby',
-      component:Nearby
-    },
-    {
-      path:'/order',
-      name:'order',
-      component:Order
-    },
-    {
-      path:'/mine',
-      name:'mine',
-      component:Mine
-    }
+    
   ]
 })
