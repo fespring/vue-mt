@@ -54,11 +54,18 @@ import {getShopList} from '@/api/shop'
 export default {
   data () {
     return {
-      list:[],
-      page:0,
+    
       isWaterfallDisabled:false,
       loading:false,
       nodata:1
+    }
+  },
+  computed:{
+    list:function(){
+      return this.$store.state.list
+    },
+    page:function(){
+      return this.$store.state.page;
     }
   },
   directives: {
@@ -73,7 +80,9 @@ export default {
       if(this.loading) return false;
       this.loading = true;
 
-      this.page++;
+    
+      this.$store.commit("nextpage");
+
 
       let that=this;
       setTimeout(function(){
@@ -81,7 +90,9 @@ export default {
             if(res.data.length==0){
                 that.nodata=0;
             }
-            that.list=that.list.concat(res.data);
+
+            that.$store.commit("setshoplist",res.data);
+
             that.loading = false
           });
 
