@@ -1,5 +1,6 @@
 <template>
   <div>
+      <router-view></router-view>
       <mu-paper>
       <mu-bottom-nav :value="bottomNav" @change="handleChange" id="footer">
         <mu-bottom-nav-item value="/home" title="首页" icon="home"/>
@@ -14,17 +15,24 @@
 <script>
 export default {
     name:'zhuyao',
-  data(){
-      return{
-          bottomNav:'recents'
-      }
-  },
-  methods:{
-      handleChange(val){
-          this.bottomNav=val,
-          this.$router.push(val)
-      }
-  }
+    data(){
+        return{
+            bottomNav:'recents'
+        }
+    },
+    mounted(){
+        let path=this.$route.path;
+        if(path=='/'){
+            path='/home'
+        }
+        this.bottomNav=path
+    },
+    methods:{
+        handleChange(val){
+            this.bottomNav=val,
+            this.$router.push(val)
+        }
+    }
 }
 </script>
 <style scoped>
@@ -35,8 +43,8 @@ export default {
         bottom: 0;
         border-top: 0.02rem solid #f0f0f0;
     }
-    .mu-button-item{
-        min-width: 0.5rem;
+    .mu-buttom-item{
+        min-width: 0.6rem;
     }
 </style>
 

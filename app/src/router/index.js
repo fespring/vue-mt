@@ -5,6 +5,7 @@ import Nearby from '@/pages/Nearby'
 import Goshopping from '@/pages/Goshopping'
 import Order from '@/pages/Order'
 import Mine from '@/pages/Mine'
+import Zhuyao from '@/pages/Main'
 
 Vue.use(Router)
 
@@ -12,7 +13,8 @@ export default new Router({
   routes: [
     {
       path:'/',
-      component:Main,
+      redirect:'/home',
+      component:Zhuyao,
       children:[
         {
           path: '/home',
