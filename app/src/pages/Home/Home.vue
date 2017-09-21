@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
       <daohang></daohang>
       <lunbo></lunbo>
       <lanmu></lanmu>
@@ -35,5 +35,13 @@ export default {
 <style scoped>
 .mb56{
   margin-bottom:.56rem;
+  
 }
+.home{
+  height:640px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #d9d9d9;
+}
+
 </style>

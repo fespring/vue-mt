@@ -1,15 +1,14 @@
 <template>
 <div class="demo-infinite-container">
+  <div
+    v-waterfall-lower="loadMore"
+    waterfall-disabled="isWaterfallDisabled"
+    waterfall-offset="400"
+  >
 
-    <template v-for="item in list">
-        <van-card
-             
-                num="2"
-                price=""
-               
-                >
+        <van-card v-for="(item,index) in list" :key="index">
             <div slot="title">
-                 <strong>铁木真烤涮自主城</strong>
+                 <strong>{{item.title}}</strong>
                 <div style="float:right; width:0.6rem;text-align:right;"><500m</div>
             
             </div>
@@ -21,46 +20,73 @@
                  <div style="float:right; width:0.6rem;text-align:right;">已售9127</div>
             </div>
          <div slot="thumb">
-           <img :src="'/static/shoplog/'+item+'.png'"/>
+           <img :src="'/static/shoplog/'+item.imgurl"/>
         </div>
 
         </van-card>
-    </template>
-  <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
+
+
+
+    <van-loading
+      v-if="loading"
+      :type="'circle'"
+      :color="'black'"
+    ></van-loading>
+
+    <div v-if="nodata==0">没有数据了！！！</div>
+
+</div>
+
 </div>
 </template>
 
 <script>
 import Vue from 'vue';
-import { Card } from 'vant';
+import axios from 'axios';
+import { Card,Loading } from 'vant';
 Vue.component(Card.name, Card);
+Vue.component(Loading.name, Loading);
+
+import { Waterfall } from 'vant';
+
+var url="http://localhost:8080/api/shop?page=";
 
 export default {
   data () {
-    const list = []
-    for (let i = 0; i < 10; i++) {
-      list.push((i + 1))
-    }
     return {
-      list,
-      num: 10,
-      loading: false,
-      scroller: null
+      list:[],
+      page:0,
+      isWaterfallDisabled:false,
+      loading:false,
+      nodata:1
     }
+  },
+  directives: {
+    WaterfallLower: Waterfall('lower'),
+    WaterfallUpper: Waterfall('upper')
   },
   mounted () {
-    this.scroller = this.$el
   },
   methods: {
-    loadMore () {
-      this.loading = true
-      setTimeout(() => {
-        for (let i = this.num; i < this.num + 10; i++) {
-          this.list.push((i + 1))
-        }
-        this.num += 10
-        this.loading = false
-      }, 2000)
+    loadMore:function () {
+      if(this.nodata==0) return false;
+      this.loading = true;
+
+      this.page++;
+
+      let that=this;
+      setTimeout(function(){
+        axios.get(url+that.page).then(res=>{
+          if(res.data.length==0){
+              that.nodata=0;
+          }
+          that.list=that.list.concat(res.data);
+          that.loading = false
+        });
+
+      },1000)
+
+
     }
   }
 }
@@ -69,8 +95,5 @@ export default {
 <style lang="css">
 .demo-infinite-container{
 
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid #d9d9d9;
 }
 </style>
