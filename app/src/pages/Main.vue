@@ -1,7 +1,6 @@
 <template>
   <div>
     <router-view></router-view>
-
     <mu-paper id="footer">
       <mu-bottom-nav :value="bottomNav" @change="handleChange">
       

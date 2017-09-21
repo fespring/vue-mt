@@ -42,14 +42,14 @@
 
 <script>
 import Vue from 'vue';
-import axios from 'axios';
+
 import { Card,Loading } from 'vant';
 Vue.component(Card.name, Card);
 Vue.component(Loading.name, Loading);
 
 import { Waterfall } from 'vant';
 
-var url="http://localhost:8080/api/shop?page=";
+import {getShopList} from '@/api/shop'
 
 export default {
   data () {
@@ -74,16 +74,16 @@ export default {
       this.loading = true;
 
       this.page++;
-      console.log(1);
+
       let that=this;
       setTimeout(function(){
-        axios.get(url+that.page).then(res=>{
-          if(res.data.length==0){
-              that.nodata=0;
-          }
-          that.list=that.list.concat(res.data);
-          that.loading = false
-        });
+        getShopList(that.page).then(res=>{
+            if(res.data.length==0){
+                that.nodata=0;
+            }
+            that.list=that.list.concat(res.data);
+            that.loading = false
+          });
 
       },1000)
 
