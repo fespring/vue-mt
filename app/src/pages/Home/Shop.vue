@@ -70,10 +70,11 @@ export default {
   methods: {
     loadMore:function () {
       if(this.nodata==0) return false;
+      if(this.loading) return false;
       this.loading = true;
 
       this.page++;
-
+      console.log(1);
       let that=this;
       setTimeout(function(){
         axios.get(url+that.page).then(res=>{

@@ -36,7 +36,11 @@ export default {
     }
   },
   mounted(){
-        this.bottomNav = this.$route.path
+        let path=this.$route.path;
+        if(path=="/")path="/home";
+
+        this.bottomNav = path;
+
   }
 }
 
