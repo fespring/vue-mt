@@ -8,15 +8,25 @@ import store from './vuex'
 Vue.config.productionTip = false
 
 
-//导入 muse-ui 的库
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
+import teal from 'muse-ui/dist/theme-teal.css'
+Vue.use(MuseUI)
+
+/*
 import 'muse-components/styles/base.less' // 加载基础的样式
-import Paper from 'muse-components/paper/paper'
-import BottomNav from 'muse-components/bottomNav/bottomNav'
-import BottomNavItem from 'muse-components/bottomNav/BottomNavItem'
-import appBar from 'muse-components/appBar/appBar'
-import textField from 'muse-components/textField/textField'
-import flatButton from 'muse-components/flatButton/flatButton'
-import iconButton from 'muse-components/iconButton/iconButton'
+
+import Paper from 'muse-components/paper'
+import bottomNav from 'muse-components/bottomNav/bottomNav'
+import bottomNavItem from 'muse-components/bottomNav/bottomNavItem'
+
+
+Vue.component(Paper.name, Paper)
+Vue.component(bottomNav.name, bottomNav)
+Vue.component(bottomNavItem.name, bottomNavItem)
+*/
+
+
 
 import flexbox from 'muse-components/flexbox/flexbox'
 import flexboxItem from 'muse-components/flexbox/flexboxItem'

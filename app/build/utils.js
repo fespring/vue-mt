@@ -2,6 +2,15 @@ var path = require('path')
 var config = require('../config')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+const museUiThemePath = path.join(
+  __dirname,
+  '..',
+  'node_modules',
+  'muse-ui',
+  'src/styles/themes/variables/teal.less'
+)
+
+
 exports.assetsPath = function (_path) {
   var assetsSubDirectory = process.env.NODE_ENV === 'production'
     ? config.build.assetsSubDirectory
@@ -56,10 +65,10 @@ const museUiThemePath = path.join(
     css: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less',{
-                                    globalVars: {
-                                      museUiTheme: `'${museUiThemePath}'`,
-                                    }
-                                  }),
+                            globalVars: {
+                              museUiTheme: `'${museUiThemePath}'`,
+                            }
+                          }),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),

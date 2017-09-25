@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import Main from '@/pages/Main/Main'
-import Home from '@/pages/Main/Home/Home'
-import Recent from '@/pages/Main/Recent'
-import Guang from '@/pages/Main/Guang'
-import Order from '@/pages/Main/Order'
-import Me from '@/pages/Main/Me'
+import Main from '@/pages/Main'
+import Home from '@/pages/Home/Home'
+import Recent from '@/pages/Recent'
+import Guang from '@/pages/Guang'
+import Order from '@/pages/Order'
+import Me from '@/pages/Me'
+import Meishi from '@/pages/Meishi'
 
-
-
-import meiShi from '@/pages/meiShi'
 
 Vue.use(Router)
 
@@ -18,41 +15,44 @@ const router= new Router({
   routes: [
     {
       path:'/',
-   
       component: Main,
       children:[
-        { path: '', name:"main", component: Home },
-        {
-          path: '/home',
-          name: 'home',
-          component: Home
-        },
-        {
-          path: '/recent',
-          name: 'recent',
-          component: Recent
-        },
-        {
-          path: '/guang',
-          name: 'guang',
-          component: Guang
-        },
-        {
-          path: '/order',
-          name: 'order',
-          component: Order
-        },
-        {
-          path: '/me',
-          name: 'me',
-          component: Me
-        }
+          {
+            path: '',
+            name: 'main',
+            component: Home
+          },
+          {
+            path: '/home',
+            name: 'home',
+            component: Home
+          },
+          {
+            path: '/recent',
+            name: 'recent',
+            component: Recent
+          },
+          {
+            path: '/guang',
+            name: 'guang',
+            component: Guang
+          },
+          {
+            path: '/order',
+            name: 'order',
+            component: Order
+          },
+          {
+            path: '/me',
+            name: 'me',
+            component: Me
+          },
       ]
     },
     {
-      path:'/meishi',
-      name:"meishi",
-      component: meiShi
+      path: '/meishi',
+      name: 'meishi',
+      component: Meishi
     }
   ]
 });

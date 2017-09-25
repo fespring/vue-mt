@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div id="view">
   
      <router-view></router-view>
@@ -43,3 +44,9 @@ html,body{
 }
 
 </style>
+=======
+  <div>
+    <router-view></router-view>
+  </div>
+</template>
+>>>>>>> teach
