@@ -49,9 +49,10 @@ Vue.component(Loading.name, Loading);
 
 import { Waterfall } from 'vant';
 
-import {getShopList} from '@/api/shop'
+import {getList} from '@/api/meishi'
 
 export default {
+  props:["type"],
   data () {
     return {
     
@@ -62,10 +63,10 @@ export default {
   },
   computed:{
     list:function(){
-      return this.$store.state.shop.list
+      return this.$store.state.meishi.list
     },
     page:function(){
-      return this.$store.state.shop.page;
+      return this.$store.state.meishi.page;
     }
   },
   directives: {
@@ -81,17 +82,20 @@ export default {
       this.loading = true;
 
     
-      this.$store.commit("nextpage");
+      this.$store.commit("nextmeishipage");
 
 
       let that=this;
       setTimeout(function(){
-        getShopList(that.page).then(res=>{
+
+  
+
+        getList(that.page).then(res=>{
             if(res.data.length==0){
                 that.nodata=0;
             }
 
-            that.$store.commit("setshoplist",res.data);
+            that.$store.commit("setmeishilist",res.data);
 
             that.loading = false
           });
@@ -105,7 +109,5 @@ export default {
 </script>
 
 <style lang="css">
-.demo-infinite-container{
 
-}
 </style>

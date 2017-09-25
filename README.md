@@ -19,6 +19,7 @@
 * http://www.muse-ui.org/#/index
 * http://mint-ui.github.io/#!/zh-cn 
 
+* https://github.com/vuejs/awesome-vue#components--libraries
 
 * https://material.io/icons/
 

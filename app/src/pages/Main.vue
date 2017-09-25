@@ -34,7 +34,15 @@ export default {
 
     }
   },
+    beforeRouteUpdate (to, from, next) {
+     let path=to.path;
+     if(path=="/")path="/home";
+
+     this.bottomNav = path;
+    next();
+  },
   mounted(){
+        
         let path=this.$route.path;
         if(path=="/")path="/home";
 
