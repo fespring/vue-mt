@@ -76,4 +76,7 @@ export default {
   margin-bottom:0.05rem;
   margin-top:0.05rem;
 }
+.item img{
+  padding:10px;
+}
 </style>
