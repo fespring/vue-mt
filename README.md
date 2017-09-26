@@ -45,8 +45,8 @@ npm install less less-loader -save-dev
 
 svg 的使用
 
-eslint 的集合
-
 vuex  模块化
+
+eslint 的集合
 
 

@@ -8,10 +8,11 @@
   
 
   <div class="item" v-for="i in 10">
+
     <div>一碗燕麦粥,让你三天早餐不重样</div>
-    <img src="/static/shoplog/1.png" width="100"/>
-    <img src="/static/shoplog/2.png" width="100"/>
-    <img src="/static/shoplog/3.png" width="100"/>
+    <img src="/static/shoplog/1.png"/>
+    <img src="/static/shoplog/2.png"/>
+    <img src="/static/shoplog/3.png"/>
     <p><span>生活灵感</span>147万查看</p>
   </div>
   
@@ -77,6 +78,7 @@ export default {
   margin-top:0.05rem;
 }
 .item img{
+  width:1rem;
   padding:10px;
 }
 </style>

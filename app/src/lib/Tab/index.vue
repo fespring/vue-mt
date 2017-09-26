@@ -282,7 +282,7 @@
                 color: #999;
                 &:hover {
                     text-decoration: none;
-                    color: #f00;
+                    /*color: #f00;*/
                 }
                 &:focus {
                     outline: none;

@@ -2,14 +2,14 @@
   <div class="hello">
        <daohang></daohang>
        <div class="middle">
-        <div  class="lmiddle">
-                <mu-avatar src="/static/head/uicon.jpg"  :size="100"/> 
-                <br/>
-                登陆后可查看订单收藏记录
-                <br/>
-                <mu-raised-button label="登录" class="demo-raised-button"/>
-              
-      </div>
+            <div  class="lmiddle">
+                    <mu-avatar src="/static/head/uicon.jpg"  :size="100"/> 
+                    <br/>
+                    登陆后可查看订单收藏记录
+                    <br/>
+                    <mu-raised-button label="登录" class="demo-raised-button"/>
+                  
+          </div>
         
        </div>
   </div>
@@ -34,23 +34,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 .middle{
     position:absolute;
     left:0px;
