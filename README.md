@@ -39,3 +39,14 @@ teach   视频分支
 museui
 
 npm install less less-loader -save-dev
+
+
+// todos
+
+svg 的使用
+
+eslint 的集合
+
+vuex  模块化
+
+
