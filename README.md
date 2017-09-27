@@ -23,6 +23,7 @@ icons
 https://materialdesignicons.com/
 
 
+* https://github.com/vuejs/awesome-vue#components--libraries
 
 * https://material.io/icons/
 
@@ -42,3 +43,14 @@ teach   视频分支
 museui
 
 npm install less less-loader -save-dev
+
+
+// todos
+
+svg 的使用
+
+vuex  模块化
+
+eslint 的集成
+
+

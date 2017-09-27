@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/pages/Main'
 import Home from '@/pages/Home/Home'
-import Recent from '@/pages/Recent'
-import Guang from '@/pages/Guang'
-import Order from '@/pages/Order'
-import Me from '@/pages/Me'
+import Recent from '@/pages/Recent/Recent'
+import Guang from '@/pages/Guang/Guang'
+import Order from '@/pages/Order/Order'
+import Me from '@/pages/Me/Me'
 import Meishi from '@/pages/Meishi'
 
 
@@ -59,9 +59,9 @@ const router= new Router({
 
 
 
-import vueg from 'vueg'    
-import 'vueg/css/transition-min.css'
-Vue.use(vueg, router);
+//import vueg from 'vueg'    
+//import 'vueg/css/transition-min.css'
+//Vue.use(vueg, router);
 
 
 

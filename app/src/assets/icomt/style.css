@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'icomt';
+  src:  url('fonts/icomt.eot?zd0sr0');
+  src:  url('fonts/icomt.eot?zd0sr0#iefix') format('embedded-opentype'),
+    url('fonts/icomt.ttf?zd0sr0') format('truetype'),
+    url('fonts/icomt.woff?zd0sr0') format('woff'),
+    url('fonts/icomt.svg?zd0sr0#icomt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomt' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mt-hezuo:before {
+  content: "\e900";
+  color: #007979;
+}
+.icon-mt-phone:before {
+  content: "\e942";
+}

@@ -1,9 +1,10 @@
 .DS_Store
-node_modules/
-dist/
+app/node_modules/
+app/dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+app/package-lock.json
 
 # Editor directories and files
 .idea

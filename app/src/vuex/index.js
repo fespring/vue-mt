@@ -6,16 +6,29 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state:{
-        num:1,
-        list:[],
-        page:0
+        shop:{
+            num:1,
+            list:[],
+            page:0
+        },
+        meishi:{
+            num:1,
+            list:[],
+            page:0
+        }
     },
     mutations:{
         setshoplist(state,newData){
-            state.list=state.list.concat(newData);
+            state.shop.list=state.shop.list.concat(newData);
         },
         nextpage(state){
-            state.page++;
+            state.shop.page++;
+        },
+        setmeishilist(state,newData){
+            state.meishi.list=state.meishi.list.concat(newData);
+        },
+        nextmeishipage(state){
+            state.meishi.page++;
         }
     }
 

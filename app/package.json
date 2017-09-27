@@ -12,11 +12,11 @@
   "dependencies": {
     "axios": "^0.16.2",
     "mint-ui": "^2.2.9",
-    "vue": "^2.4.2",
-    "vue-router": "^2.7.0",
-    "vueg": "^1.2.6",
     "muse-ui": "^2.1.0",
     "vant": "^0.9.5",
+    "vue": "^2.4.2",
+    "vue-router": "^2.7.0",
+    "vue-swipe-tab": "^2.0.2",
     "vuex": "^2.4.0"
   },
   "devDependencies": {
@@ -44,10 +44,12 @@
     "http-proxy-middleware": "^0.17.3",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
+    "node-sass": "^4.5.3",
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
     "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.6",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "url-loader": "^0.5.8",
