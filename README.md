@@ -47,6 +47,6 @@ svg 的使用
 
 vuex  模块化
 
-eslint 的集合
+eslint 的集成
 
 

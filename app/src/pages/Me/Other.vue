@@ -32,12 +32,12 @@
   </van-cell>
     <van-cell  icon="credit-pay" title="客服中心" is-link>
          <template slot="icon">
-              <van-icon name="credit-pay" />
+                <i class="icon-mt-phone" style="font-size:14px;margin-right:5px;"> </i>
          </template>
   </van-cell>
     <van-cell  icon="credit-pay" title="我要合作" is-link>
          <template slot="icon">
-              <van-icon name="credit-pay" />
+              <i class="icon-mt-hezuo" style="font-size:14px;margin-right:5px;"> </i>
          </template>
   </van-cell>
   

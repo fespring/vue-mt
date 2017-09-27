@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import store from './vuex'
 
-
+import '@/assets/icomt/style.scss'
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
