@@ -3,15 +3,14 @@
     <div class="tabbox">
       <div class="box">
         <mt-button class="anniu" :type="id==1?'danger':'default'" @click="select(1)">热门</mt-button>
-        <mt-button class="anniu" :type="id==2?'danger':'default'" @click="select(2)">小吃快餐</mt-button>
-        <mt-button class="anniu" :type="id==3?'danger':'default'" @click="select(3)">面包甜点</mt-button>
-        <mt-button class="anniu" :type="id==4?'danger':'default'" @click="select(4)">川菜</mt-button>
+        <mt-button class="anniu" :type="id==2?'danger':'default'" @click="select(2)">商务出行</mt-button>
+        <mt-button class="anniu" :type="id==3?'danger':'default'" @click="select(3)">公寓民宿</mt-button>
+        <mt-button class="anniu" :type="id==4?'danger':'default'" @click="select(4)">情侣专享</mt-button>
       </div>
       <div class="box">
-        <mt-button class="anniu" :type="id==5?'danger':'default'" @click="select(5)">北京菜</mt-button>
-        <mt-button class="anniu" :type="id==6?'danger':'default'" @click="select(6)">东北菜</mt-button>
-        <mt-button class="anniu" :type="id==7?'danger':'default'" @click="select(7)">韩国料理</mt-button>
-        <mt-button class="anniu" :type="id==8?'danger':'default'" @click="select(8)">日本料理</mt-button>
+        <mt-button class="anniu" :type="id==5?'danger':'default'" @click="select(5)">品牌连锁</mt-button>
+        <mt-button class="anniu" :type="id==6?'danger':'default'" @click="select(6)">客栈青旅</mt-button>
+        <mt-button class="anniu" :type="id==7?'danger':'default'" @click="select(7)">高星特惠</mt-button>
       </div>
     </div>
      <meishi type="hot"></meishi>

@@ -67,6 +67,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .middle{
   padding-top:.55rem;
   padding-bottom:.56rem;

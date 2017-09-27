@@ -7,19 +7,19 @@
   >
 
         <van-card v-for="(item,index) in list" :key="index">
-            <div slot="title">
+            <div slot="title" id="bt">
                  <strong>{{item.title}}</strong>
                 <div style="float:right; width:0.6rem;text-align:right;"><500m</div>
             
             </div>
-            <div slot="desc">
+            <div slot="desc" id="js">
                 [万博广场]快来呀！！！
                 <br/>
                 <span style="color:green;font-weight:bold;">￥59</span> <mu-badge content="劲爆" secondary slot="after"/>
           
                  <div style="float:right; width:0.6rem;text-align:right;">已售9127</div>
             </div>
-         <div slot="thumb">
+         <div slot="thumb" class="imgs">
            <img :src="'/static/shoplog/'+item.imgurl"/>
         </div>
 
@@ -108,6 +108,15 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+  .imgs{
+    width:0.8rem;
+    height:0.8rem;
+  }
+  .bt{
+    
+  }
+  .js{
 
+  }
 </style>
