@@ -1,9 +1,11 @@
 <template>
-<div>
+<div class="lun">
   <van-swipe auto-play class="lunbo">
-    <van-swipe-item v-for="(image,index) in images" :key="index" :style="'background-color:'+image.color">{{image.text}}</van-swipe-item>
+    <van-swipe-item v-for="(image,index) in images" :key="index" >
+        <img :src="'/static/shoplog/'+image.img">
+    </van-swipe-item>
+  </van-swipe-item>
 </van-swipe>
-
 </div>
 </template>
 <script>
@@ -17,17 +19,17 @@ export default{
     data(){
         return{
             images:[
-                {color:"red",text:"lunbo1"},
-                {color:"green",text:"lunbo2"},
-                {color:"blue",text:"lunbo3"},
-                {color:"pink",text:"lunbo4"},
-                {color:"yellow",text:"lunbo5"},
+                 {img:"1.jpg"},
+                 {img:"2.jpg"}
             ]
         }
     }
 }
 </script>
 <style scoped>
+    .lun{
+        margin-top:0.56rem;
+    }
     .lunbo{
         height:1.2rem;
     }

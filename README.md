@@ -41,12 +41,17 @@ museui
 npm install less less-loader -save-dev
 
 
+svg 的使用
+
 // todos
 
-svg 的使用
 
 vuex  模块化
 
 eslint 的集成
+
+端到端 测试
+
+
 
 

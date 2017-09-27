@@ -25,12 +25,14 @@
               <van-icon name="credit-pay" />
          </template>
   </van-cell>
-    <van-cell  icon="credit-pay" title="办信用卡" is-link>
+  <!-- icon="credit-pay" -->
+    <van-cell class="icon-xingyongka"  title="办信用卡" is-link>
          <template slot="icon">
               <van-icon name="credit-pay" />
          </template>
   </van-cell>
-    <van-cell  icon="credit-pay" title="客服中心" is-link>
+ <!--  icon="credit-pay" -->
+    <van-cell class="icon-dianhua"  title="客服中心" is-link>
          <template slot="icon">
                 <i class="icon-mt-phone" style="font-size:14px;margin-right:5px;"> </i>
          </template>

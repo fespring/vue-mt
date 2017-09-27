@@ -16,6 +16,6 @@ export default{
     left:0;
     top:0;
     right:0;
-    z-index:9999;
+    z-index:2;
 }
 </style>
