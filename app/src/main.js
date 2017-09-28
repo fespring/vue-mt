@@ -6,7 +6,7 @@ import router from './router'
 import store from './vuex'
 
 
-
+import '@/assets/icomoon/style.css'
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 import teal from 'muse-ui/dist/theme-teal.css'

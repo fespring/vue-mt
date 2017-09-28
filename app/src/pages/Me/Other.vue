@@ -3,7 +3,7 @@
 <van-cell-group id="themedefault">
   <van-cell id="themeblue"  title="好友去哪"  is-link>
         <template slot="icon">
-              <van-icon  name="contact" />
+              <i class="ic-users tubiao"></i>
          </template>
         
   </van-cell>
@@ -11,41 +11,41 @@
   
   
     <template slot="icon">
-              <van-icon   name="wap-home" />
+              <i class="ic-huiyuan tubiao"></i>
          </template>
 </van-cell>
   <van-cell id="themered"  icon="peer-pay" title="手机充值"  is-link>
     <template slot="icon">
-              <van-icon name="peer-pay" />
+              <i class="ic-chongzhi tubiao"></i>
          </template>
   
   </van-cell>
   <van-cell  icon="ecard-pay" title="发票助手" is-link>
          <template slot="icon">
-              <van-icon name="credit-pay" />
+              <i class="ic-fapiao tubiao"></i>
          </template>
   </van-cell>
   <!-- icon="credit-pay" -->
     <van-cell class="icon-xingyongka"  title="办信用卡" is-link>
          <template slot="icon">
-              <van-icon name="credit-pay" />
+              <i class="ic-xinyongka tubiao"></i>
          </template>
   </van-cell>
  <!--  icon="credit-pay" -->
     <van-cell class="icon-dianhua"  title="客服中心" is-link>
          <template slot="icon">
-              <van-icon name="credit-pay" />
+              <i class="ic-dianhua tubiao"></i>
          </template>
   </van-cell>
     <van-cell  icon="credit-pay" title="我要合作" is-link>
          <template slot="icon">
-              <van-icon name="credit-pay" />
+              <i class="ic-hezuo tubiao"></i>
          </template>
   </van-cell>
   
     <van-cell   title="关于美团" is-link>
          <template slot="icon">
-              <van-icon name="fail" />
+              <i class="ic-guanyu tubiao"></i>
          </template>
   </van-cell>
 </van-cell-group>
@@ -80,5 +80,9 @@ export default{
 }
 #themered i{
       color:red;
+}
+.tubiao{
+  font-size: 0.14rem;
+  margin-right:0.05rem;
 }
 </style>
