@@ -4,7 +4,21 @@
 
 #### 思来想去也不知道该写一个什么电商的项目，我这个人吧，比较爱吃，但我不胖啊，我觉得美食的平台比较不错，很合我的胃口，那么我觉得美团就是个不错的素材，一来它足够复杂，开放的外卖平台比一般的公司独有商店更加复杂。二来我喜欢美食。三来见到那么多美食，大家也不会感觉到厌烦。
 
+<<<<<<< HEAD
 #### 该项目大大小小80多个页面，涉及注册、登录、商品展示、购物车、下单等等，是一个完整的流程。
+=======
+### ui 库
+* http://framework7.cn/
+* https://onsen.io/
+* https://vux.li/#/ 
+* https://github.com/youzan/vant
+* http://www.muse-ui.org/#/index
+* http://mint-ui.github.io/#!/zh-cn 
+
+* https://github.com/vuejs/awesome-vue#components--libraries
+
+* https://material.io/icons/
+>>>>>>> d971f61363b14de86dbd89a458ddaae8671656c2
 
 #### 因为利用业余时间写，一直没有时间写，我先把框架打起来，有时间就一点点的加功能。
 
@@ -103,3 +117,10 @@
 ├── index.html                                  // 入口html文件
 ```
 
+
+
+### ui 框架的整合
+
+museui
+
+npm install less less-loader -save-dev
