@@ -22,4 +22,7 @@ export default{
     right:0;
     z-index:9999;
 }
+.mu-appbar{
+    height:0.56rem;
+}
 </style>
