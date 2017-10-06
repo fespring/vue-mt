@@ -27,10 +27,7 @@
 
 
 
-    <van-loading
-      v-if="loading"
-      :type="'circle'"
-      :color="'black'"
+    <van-loading v-if="loading" :type="'gradient-circle'" :color="'black'" class="xiaoquanquan"
     ></van-loading>
 
     <div v-if="nodata==0">没有数据了！！！</div>
@@ -105,7 +102,7 @@ export default {
 </script>
 
 <style lang="css">
-.demo-infinite-container{
-
+.xiaoquanquan{
+    margin-left:1.2rem;
 }
 </style>
